@@ -1,0 +1,73 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #393939;
+}
+
+/*----------Navbar---------*/
+nav {
+  height: 70px;
+  background-color: #c4425a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#brand p{
+  color: white;
+  font-size: 2em;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);
+}
+
+.navLinks {
+  width: 25%;
+}
+
+ul {
+  /*background-color: white;*/
+  display: flex;
+  justify-content: space-around;
+}
+
+.navLinks ul li {
+  list-style: none;
+}
+
+.navLinks ul li a{
+  text-decoration: none;
+  color: white;
+  transition-duration: .3s;
+}
+
+.navLinks ul li a:hover{
+  color: #ce7384;
+  transform: translateY(-2px);
+  /*text-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);*/
+}
+/*----------/Navbar---------*/
+
+
+
+/*------------Hero----------*/
+
+#heroArea {
+  height: 450px;
+  background-color: #c4425a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroAbout p {
+  margin: 0 0 10px 0;
+  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);
+}
+.heroSal, .heroHeader {
+  font-size: 3em;
+  font-weight: 300;
+  color: white;
+}
+
+/*------------/Hero----------*/

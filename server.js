@@ -12,10 +12,30 @@ app.use(express.static(__dirname))
 
 // app.use(apiRouter)
 
+app.get('/api/projects', (req, res)=>{
+	db.Project.findAll()
+	.then((data)=> {
+		res.send(data);
+	})
+	.catch((error)=> {
+		res.send(error);
+	})
+})
 
-
-
-
+app.post('/api/projects', (req, res) => {
+	db.Project.create({
+		title: req.body.title,
+		image: req.body.image,
+		github: req.body.github,
+		description: req.body.description
+	})
+	.then((data) => {
+		res.send(data);
+	})
+	.catch((error) => {
+		res.send(error)
+	})
+})
 
 app.get('/*',(req, res)=>{
   res.sendFile(path.join(__dirname, '/frontend/index.html'))
