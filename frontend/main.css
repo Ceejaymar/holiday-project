@@ -14,7 +14,11 @@ nav {
   align-items: center;
 }
 
-#brand p{
+.brand a {
+  text-decoration: none;
+}
+
+.brand a p {
   color: white;
   font-size: 2em;
   font-weight: 300;
@@ -35,13 +39,13 @@ ul {
   list-style: none;
 }
 
-.navLinks ul li a{
+.navLinks ul li a {
   text-decoration: none;
   color: white;
   transition-duration: .3s;
 }
 
-.navLinks ul li a:hover{
+.navLinks ul li a:hover {
   color: #ce7384;
   transform: translateY(-2px);
   /*text-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);*/
@@ -52,7 +56,7 @@ ul {
 
 /*------------Hero----------*/
 
-#heroArea {
+.heroArea {
   height: 450px;
   background-color: #c4425a;
   display: flex;
@@ -71,3 +75,106 @@ ul {
 }
 
 /*------------/Hero----------*/
+
+
+
+/*--------Contact---------*/
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0 25px 0;
+  /*border-bottom: 1px solid #efefef;*/
+}
+
+.getit {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.contactSection button {
+  font-size: 1.5em;
+  font-weight: 300;
+  background-color: #c4425a;
+  color: white;
+  border: 1px solid #c4425a;
+  padding: 10px;
+  transition-duration: .3s;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);
+}
+
+.contactSection button:hover {
+  /*background-color: white;
+  color: #c4425a;*/
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);
+}
+
+.contactSection button:focus {
+  outline: none;
+}
+
+.socialIcons {
+  margin-top: 30px;
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  /*background-color: blue;*/
+}
+.socialIcons {
+  margin-top: 40px;
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  /*background-color: blue;*/
+}
+.socialIcons a {
+  color: #393939;
+}
+
+.socialIcons i {
+  font-size: 2.5em;
+  transition-duration: .3s;
+}
+
+.socialIcons i:hover {
+  transform: translateY(-3px);
+}
+/*--------/Contact---------*/
+
+
+
+/*--------Footer---------*/
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  border-top: 1px solid #efefef;
+  width: 960px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.footer small {
+  color: #CFD7DF;
+}
+
+.addLink {
+  display: flex;
+  align-items: center;
+}
+
+.addLink a {
+  text-decoration: none;
+  color: #CFD7DF;
+  transition-duration: .3s;
+}
+
+.addLink a:hover {
+  color: #9ba2a8;
+}
+/*--------/Footer---------*/

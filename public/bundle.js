@@ -62,9 +62,9 @@
 	
 	var _Navbar2 = _interopRequireDefault(_Navbar);
 	
-	var _HeroArea = __webpack_require__(240);
+	var _HomeBody = __webpack_require__(248);
 	
-	var _HeroArea2 = _interopRequireDefault(_HeroArea);
+	var _HomeBody2 = _interopRequireDefault(_HomeBody);
 	
 	var _Projects = __webpack_require__(241);
 	
@@ -78,13 +78,20 @@
 	
 	var _CreateProject2 = _interopRequireDefault(_CreateProject);
 	
+	var _Contact = __webpack_require__(251);
+	
+	var _Contact2 = _interopRequireDefault(_Contact);
+	
 	var _Footer = __webpack_require__(246);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// components
+	// import HeroArea from "./components/HeroArea";
+	
+	
+	// styles
 	var App = _react2.default.createClass({
 	  displayName: 'App',
 	
@@ -93,12 +100,13 @@
 	      'div',
 	      null,
 	      _react2.default.createElement(_Navbar2.default, null),
-	      this.props.children
+	      this.props.children,
+	      _react2.default.createElement(_Footer2.default, null)
 	    );
 	  }
 	});
 	
-	// styles
+	// components
 	
 	
 	_reactDom2.default.render(_react2.default.createElement(
@@ -107,10 +115,11 @@
 	  _react2.default.createElement(
 	    _reactRouter.Route,
 	    { path: '/', component: App },
-	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _HeroArea2.default }),
+	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _HomeBody2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'projects', component: _Projects2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'about me', component: _AboutMe2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'createproject', component: _CreateProject2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: 'createproject', component: _CreateProject2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'contact', component: _Contact2.default })
 	  )
 	), document.getElementById('root'));
 
@@ -26645,7 +26654,7 @@
 	
 	
 	// module
-	exports.push([module.id, "html, body {\n  margin: 0;\n  padding: 0;\n  font-family: 'Source Sans Pro', sans-serif;\n  color: #393939;\n}\n\n/*----------Navbar---------*/\nnav {\n  height: 70px;\n  background-color: #c4425a;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n}\n\n#brand p{\n  color: white;\n  font-size: 2em;\n  font-weight: 300;\n  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n\n.navLinks {\n  width: 25%;\n}\n\nul {\n  /*background-color: white;*/\n  display: flex;\n  justify-content: space-around;\n}\n\n.navLinks ul li {\n  list-style: none;\n}\n\n.navLinks ul li a{\n  text-decoration: none;\n  color: white;\n  transition-duration: .3s;\n}\n\n.navLinks ul li a:hover{\n  color: #ce7384;\n  transform: translateY(-2px);\n  /*text-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);*/\n}\n/*----------/Navbar---------*/\n\n\n\n/*------------Hero----------*/\n\n#heroArea {\n  height: 450px;\n  background-color: #c4425a;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.heroAbout p {\n  margin: 0 0 10px 0;\n  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n.heroSal, .heroHeader {\n  font-size: 3em;\n  font-weight: 300;\n  color: white;\n}\n\n/*------------/Hero----------*/\n", ""]);
+	exports.push([module.id, "html, body {\n  margin: 0;\n  padding: 0;\n  font-family: 'Source Sans Pro', sans-serif;\n  color: #393939;\n}\n\n/*----------Navbar---------*/\nnav {\n  height: 70px;\n  background-color: #c4425a;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n}\n\n.brand a {\n  text-decoration: none;\n}\n\n.brand a p {\n  color: white;\n  font-size: 2em;\n  font-weight: 300;\n  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n\n.navLinks {\n  width: 25%;\n}\n\nul {\n  /*background-color: white;*/\n  display: flex;\n  justify-content: space-around;\n}\n\n.navLinks ul li {\n  list-style: none;\n}\n\n.navLinks ul li a {\n  text-decoration: none;\n  color: white;\n  transition-duration: .3s;\n}\n\n.navLinks ul li a:hover {\n  color: #ce7384;\n  transform: translateY(-2px);\n  /*text-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);*/\n}\n/*----------/Navbar---------*/\n\n\n\n/*------------Hero----------*/\n\n.heroArea {\n  height: 450px;\n  background-color: #c4425a;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.heroAbout p {\n  margin: 0 0 10px 0;\n  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n.heroSal, .heroHeader {\n  font-size: 3em;\n  font-weight: 300;\n  color: white;\n}\n\n/*------------/Hero----------*/\n\n\n\n/*--------Contact---------*/\n.contactSection {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 15px 0 25px 0;\n  /*border-bottom: 1px solid #efefef;*/\n}\n\n.getit {\n  font-size: 2.5em;\n  font-weight: 300;\n}\n\n.contactSection button {\n  font-size: 1.5em;\n  font-weight: 300;\n  background-color: #c4425a;\n  color: white;\n  border: 1px solid #c4425a;\n  padding: 10px;\n  transition-duration: .3s;\n  border-radius: 3px;\n  box-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n\n.contactSection button:hover {\n  /*background-color: white;\n  color: #c4425a;*/\n  transform: translateY(-3px);\n  box-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);\n}\n\n.contactSection button:focus {\n  outline: none;\n}\n\n.socialIcons {\n  margin-top: 30px;\n  width: 15%;\n  display: flex;\n  justify-content: space-around;\n  /*background-color: blue;*/\n}\n.socialIcons {\n  margin-top: 40px;\n  width: 15%;\n  display: flex;\n  justify-content: space-around;\n  /*background-color: blue;*/\n}\n.socialIcons a {\n  color: #393939;\n}\n\n.socialIcons i {\n  font-size: 2.5em;\n  transition-duration: .3s;\n}\n\n.socialIcons i:hover {\n  transform: translateY(-3px);\n}\n/*--------/Contact---------*/\n\n\n\n/*--------Footer---------*/\nfooter {\n  display: flex;\n  justify-content: center;\n}\n\n.footer {\n  border-top: 1px solid #efefef;\n  width: 960px;\n  height: 50px;\n  display: flex;\n  align-items: center;\n}\n\n.footer small {\n  color: #CFD7DF;\n}\n\n.addLink {\n  display: flex;\n  align-items: center;\n}\n\n.addLink a {\n  text-decoration: none;\n  color: #CFD7DF;\n  transition-duration: .3s;\n}\n\n.addLink a:hover {\n  color: #9ba2a8;\n}\n/*--------/Footer---------*/\n", ""]);
 	
 	// exports
 
@@ -26980,7 +26989,7 @@
 	  displayName: 'Navbar',
 	
 	  render: function render() {
-	    var links = ["projects", "about me", "createproject"];
+	    var links = ["projects", "about me", "contact"];
 	    links = links.map(function (element, idx) {
 	      return _react2.default.createElement(
 	        'li',
@@ -27000,11 +27009,15 @@
 	        null,
 	        _react2.default.createElement(
 	          'div',
-	          { id: 'brand' },
+	          { className: 'brand' },
 	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Carlos Martinez'
+	            _reactRouter.Link,
+	            { to: '/' },
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Carlos Martinez'
+	            )
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -27013,15 +27026,6 @@
 	          _react2.default.createElement(
 	            'ul',
 	            null,
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/' },
-	                'home'
-	              )
-	            ),
 	            links
 	          )
 	        )
@@ -27033,54 +27037,7 @@
 	exports.default = Navbar;
 
 /***/ },
-/* 240 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var HeroArea = _react2.default.createClass({
-	  displayName: "HeroArea",
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      "section",
-	      { id: "heroArea" },
-	      _react2.default.createElement(
-	        "div",
-	        { className: "heroAbout" },
-	        _react2.default.createElement(
-	          "p",
-	          { className: "heroSal" },
-	          "Hi, I'm Carlos"
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          { className: "heroHeader" },
-	          "Fullstack Web Developer"
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          { className: "heroHeader" },
-	          "Based in Brooklyn"
-	        )
-	      )
-	    );
-	  }
-	});
-	
-	exports.default = HeroArea;
-
-/***/ },
+/* 240 */,
 /* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -37509,9 +37466,251 @@
 
 /***/ },
 /* 246 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(179);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Footer = _react2.default.createClass({
+	  displayName: 'Footer',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'footer',
+	      null,
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'footer' },
+	        _react2.default.createElement(
+	          'small',
+	          null,
+	          '&copy Carlos Martinez'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'addLink' },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/createproject' },
+	          'Add project'
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = Footer;
+
+/***/ },
+/* 247 */,
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _HeroArea = __webpack_require__(249);
+	
+	var _HeroArea2 = _interopRequireDefault(_HeroArea);
+	
+	var _HomeContact = __webpack_require__(250);
+	
+	var _HomeContact2 = _interopRequireDefault(_HomeContact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// components
+	var HomeBody = _react2.default.createClass({
+	  displayName: 'HomeBody',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(_HeroArea2.default, null),
+	      _react2.default.createElement(_HomeContact2.default, null)
+	    );
+	  }
+	});
+	
+	exports.default = HomeBody;
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var HeroArea = _react2.default.createClass({
+	  displayName: "HeroArea",
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "section",
+	      { className: "heroArea" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "heroAbout" },
+	        _react2.default.createElement(
+	          "p",
+	          { className: "heroSal" },
+	          "Hi, I'm Carlos"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          { className: "heroHeader" },
+	          "Fullstack Web Developer"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          { className: "heroHeader" },
+	          "Based in Brooklyn"
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = HeroArea;
+
+/***/ },
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(179);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var HomeContact = _react2.default.createClass({
+	  displayName: 'HomeContact',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'section',
+	      { className: 'contactSection' },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: 'getit' },
+	        'Get in touch'
+	      ),
+	      _react2.default.createElement(
+	        _reactRouter.Link,
+	        { to: 'contact' },
+	        _react2.default.createElement(
+	          'button',
+	          null,
+	          'Contact me'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'socialIcons' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://www.instagram.com/steadyonthego/', target: '_blank' },
+	          _react2.default.createElement('i', { className: 'fa fa-instagram' })
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://github.com/Ceejaymar', target: '_blank' },
+	          _react2.default.createElement('i', { className: 'fa fa-github' })
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://www.linkedin.com/in/carmart', target: '_blank' },
+	          _react2.default.createElement('i', { className: 'fa fa-linkedin' })
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://twitter.com/steadyonthego', target: '_blank' },
+	          _react2.default.createElement('i', { className: 'fa fa-twitter' })
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = HomeContact;
+
+/***/ },
+/* 251 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Contact = _react2.default.createClass({
+	  displayName: "Contact",
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      null,
+	      _react2.default.createElement(
+	        "form",
+	        null,
+	        _react2.default.createElement("label", null),
+	        _react2.default.createElement("input", { type: "text", placeholder: "name" }),
+	        _react2.default.createElement("label", null),
+	        _react2.default.createElement("input", { type: "text", placeholder: "email" }),
+	        _react2.default.createElement("label", null),
+	        _react2.default.createElement("input", { type: "text", placeholder: "message" }),
+	        _react2.default.createElement("label", null),
+	        _react2.default.createElement("input", { type: "submit" })
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = Contact;
 
 /***/ }
 /******/ ]);

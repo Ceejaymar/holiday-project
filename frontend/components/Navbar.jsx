@@ -3,7 +3,7 @@ import {Link} from 'react-router';
 
 const Navbar = React.createClass({
   render: function(){
-    var links = ["projects", "about me", "createproject"];
+    var links = ["projects", "about me", "contact"];
     links = links.map(function(element, idx){
       return (
         <li key={idx}><Link to={"/" + element} key={idx}>{element}</Link></li>
@@ -12,10 +12,10 @@ const Navbar = React.createClass({
     return (
       <div>
         <nav>
-          <div id="brand"><p>Carlos Martinez</p></div>
+          <div className="brand"><Link to='/'><p>Carlos Martinez</p></Link></div>
           <div className="navLinks">
             <ul>
-              <li><Link to="/">home</Link></li>
+              {/* <li><Link to="/">home</Link></li> */}
               {links}
             </ul>
           </div>
