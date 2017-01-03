@@ -6,9 +6,10 @@ const Footer = React.createClass({
     return (
       <footer>
         <div className="footer">
-          <small>&copy Carlos Martinez</small>
+          <small>© Carlos Martinez</small>
         </div>
         <div className="addLink">
+          <Link to="/createskill">Add skill</Link>
           <Link to="/createproject">Add project</Link>
         </div>
       </footer>

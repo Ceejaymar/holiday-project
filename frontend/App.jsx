@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar";
 import HomeBody from "./components/home/HomeBody";
 import Projects from "./components/projects/Projects";
 import About from "./components/AboutMe";
+import CreateSkill from './components/skills/CreateSkill';
 import CreateProject from './components/projects/CreateProject';
 import Contact from './components/Contact';
 import Footer from "./components/Footer";
@@ -32,7 +33,8 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <IndexRoute component={HomeBody} />
       <Route path="projects" component={Projects} />
-      <Route path="about me" component={About} />
+      <Route path="about" component={About} />
+      <Route path="createskill" component={CreateSkill} />
       <Route path="createproject" component={CreateProject} />
       <Route path="contact" component={Contact} />
     </Route>

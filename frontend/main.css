@@ -78,7 +78,60 @@ ul {
 
 
 
-/*--------Contact---------*/
+/*--------HomeSkills---------*/
+#bodyContent {
+  display: flex;
+  justify-content: center;
+}
+.bodyContainer {
+  width: 960px;
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #efefef;
+}
+.bodyContainer p{
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillSet {
+  display: flex;
+  align-items: center;
+}
+
+.specSkill {
+  width: 320px;
+  margin-bottom: 10px;
+}
+
+.specSkill i {
+  font-size: 2.5em;
+}
+
+.specSkill p {
+  font-size: 2em;
+}
+.specSkill .skillDetails {
+  font-size: 1.5em;
+  width: 80%;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.specSkill .skillDetails {
+  font-size: 1em;
+  font-weight: normal;
+}
+/*--------/HomeSkills---------*/
+
+
+
+/*--------HomeContact---------*/
 .contactSection {
   display: flex;
   flex-direction: column;
@@ -141,7 +194,31 @@ ul {
 .socialIcons i:hover {
   transform: translateY(-3px);
 }
-/*--------/Contact---------*/
+/*--------/HomeContact---------*/
+
+
+
+/*-----------ContactPage---------*/
+
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;
+}
+
+.contactPage form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 800px;
+  justify-content: space-around;
+}
+
+/*.contactPage form input {
+  width: 400px;
+}*/
+/*-----------ContactPage---------*/
 
 
 

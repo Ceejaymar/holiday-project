@@ -62,36 +62,37 @@
 	
 	var _Navbar2 = _interopRequireDefault(_Navbar);
 	
-	var _HomeBody = __webpack_require__(248);
+	var _HomeBody = __webpack_require__(240);
 	
 	var _HomeBody2 = _interopRequireDefault(_HomeBody);
 	
-	var _Projects = __webpack_require__(241);
+	var _Projects = __webpack_require__(244);
 	
 	var _Projects2 = _interopRequireDefault(_Projects);
 	
-	var _AboutMe = __webpack_require__(244);
+	var _AboutMe = __webpack_require__(247);
 	
 	var _AboutMe2 = _interopRequireDefault(_AboutMe);
 	
-	var _CreateProject = __webpack_require__(245);
+	var _CreateSkill = __webpack_require__(250);
+	
+	var _CreateSkill2 = _interopRequireDefault(_CreateSkill);
+	
+	var _CreateProject = __webpack_require__(251);
 	
 	var _CreateProject2 = _interopRequireDefault(_CreateProject);
 	
-	var _Contact = __webpack_require__(251);
+	var _Contact = __webpack_require__(252);
 	
 	var _Contact2 = _interopRequireDefault(_Contact);
 	
-	var _Footer = __webpack_require__(246);
+	var _Footer = __webpack_require__(253);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// import HeroArea from "./components/HeroArea";
-	
-	
-	// styles
+	// components
 	var App = _react2.default.createClass({
 	  displayName: 'App',
 	
@@ -105,8 +106,10 @@
 	    );
 	  }
 	});
+	// import HeroArea from "./components/HeroArea";
 	
-	// components
+	
+	// styles
 	
 	
 	_reactDom2.default.render(_react2.default.createElement(
@@ -117,7 +120,8 @@
 	    { path: '/', component: App },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _HomeBody2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'projects', component: _Projects2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'about me', component: _AboutMe2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _AboutMe2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'createskill', component: _CreateSkill2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'createproject', component: _CreateProject2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'contact', component: _Contact2.default })
 	  )
@@ -26654,7 +26658,7 @@
 	
 	
 	// module
-	exports.push([module.id, "html, body {\n  margin: 0;\n  padding: 0;\n  font-family: 'Source Sans Pro', sans-serif;\n  color: #393939;\n}\n\n/*----------Navbar---------*/\nnav {\n  height: 70px;\n  background-color: #c4425a;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n}\n\n.brand a {\n  text-decoration: none;\n}\n\n.brand a p {\n  color: white;\n  font-size: 2em;\n  font-weight: 300;\n  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n\n.navLinks {\n  width: 25%;\n}\n\nul {\n  /*background-color: white;*/\n  display: flex;\n  justify-content: space-around;\n}\n\n.navLinks ul li {\n  list-style: none;\n}\n\n.navLinks ul li a {\n  text-decoration: none;\n  color: white;\n  transition-duration: .3s;\n}\n\n.navLinks ul li a:hover {\n  color: #ce7384;\n  transform: translateY(-2px);\n  /*text-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);*/\n}\n/*----------/Navbar---------*/\n\n\n\n/*------------Hero----------*/\n\n.heroArea {\n  height: 450px;\n  background-color: #c4425a;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.heroAbout p {\n  margin: 0 0 10px 0;\n  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n.heroSal, .heroHeader {\n  font-size: 3em;\n  font-weight: 300;\n  color: white;\n}\n\n/*------------/Hero----------*/\n\n\n\n/*--------Contact---------*/\n.contactSection {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 15px 0 25px 0;\n  /*border-bottom: 1px solid #efefef;*/\n}\n\n.getit {\n  font-size: 2.5em;\n  font-weight: 300;\n}\n\n.contactSection button {\n  font-size: 1.5em;\n  font-weight: 300;\n  background-color: #c4425a;\n  color: white;\n  border: 1px solid #c4425a;\n  padding: 10px;\n  transition-duration: .3s;\n  border-radius: 3px;\n  box-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n\n.contactSection button:hover {\n  /*background-color: white;\n  color: #c4425a;*/\n  transform: translateY(-3px);\n  box-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);\n}\n\n.contactSection button:focus {\n  outline: none;\n}\n\n.socialIcons {\n  margin-top: 30px;\n  width: 15%;\n  display: flex;\n  justify-content: space-around;\n  /*background-color: blue;*/\n}\n.socialIcons {\n  margin-top: 40px;\n  width: 15%;\n  display: flex;\n  justify-content: space-around;\n  /*background-color: blue;*/\n}\n.socialIcons a {\n  color: #393939;\n}\n\n.socialIcons i {\n  font-size: 2.5em;\n  transition-duration: .3s;\n}\n\n.socialIcons i:hover {\n  transform: translateY(-3px);\n}\n/*--------/Contact---------*/\n\n\n\n/*--------Footer---------*/\nfooter {\n  display: flex;\n  justify-content: center;\n}\n\n.footer {\n  border-top: 1px solid #efefef;\n  width: 960px;\n  height: 50px;\n  display: flex;\n  align-items: center;\n}\n\n.footer small {\n  color: #CFD7DF;\n}\n\n.addLink {\n  display: flex;\n  align-items: center;\n}\n\n.addLink a {\n  text-decoration: none;\n  color: #CFD7DF;\n  transition-duration: .3s;\n}\n\n.addLink a:hover {\n  color: #9ba2a8;\n}\n/*--------/Footer---------*/\n", ""]);
+	exports.push([module.id, "html, body {\n  margin: 0;\n  padding: 0;\n  font-family: 'Source Sans Pro', sans-serif;\n  color: #393939;\n}\n\n/*----------Navbar---------*/\nnav {\n  height: 70px;\n  background-color: #c4425a;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n}\n\n.brand a {\n  text-decoration: none;\n}\n\n.brand a p {\n  color: white;\n  font-size: 2em;\n  font-weight: 300;\n  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n\n.navLinks {\n  width: 25%;\n}\n\nul {\n  /*background-color: white;*/\n  display: flex;\n  justify-content: space-around;\n}\n\n.navLinks ul li {\n  list-style: none;\n}\n\n.navLinks ul li a {\n  text-decoration: none;\n  color: white;\n  transition-duration: .3s;\n}\n\n.navLinks ul li a:hover {\n  color: #ce7384;\n  transform: translateY(-2px);\n  /*text-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);*/\n}\n/*----------/Navbar---------*/\n\n\n\n/*------------Hero----------*/\n\n.heroArea {\n  height: 450px;\n  background-color: #c4425a;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.heroAbout p {\n  margin: 0 0 10px 0;\n  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n.heroSal, .heroHeader {\n  font-size: 3em;\n  font-weight: 300;\n  color: white;\n}\n\n/*------------/Hero----------*/\n\n\n\n/*--------HomeSkills---------*/\n#bodyContent {\n  display: flex;\n  justify-content: center;\n}\n.bodyContainer {\n  width: 960px;\n  text-align: center;\n  padding-bottom: 30px;\n  border-bottom: 1px solid #efefef;\n}\n.bodyContainer p{\n  font-size: 2.5em;\n  font-weight: 300;\n}\n\n.skills {\n  display: flex;\n  flex-wrap: wrap;\n}\n\n.skillSet {\n  display: flex;\n  align-items: center;\n}\n\n.specSkill {\n  width: 320px;\n  margin-bottom: 10px;\n}\n\n.specSkill i {\n  font-size: 2.5em;\n}\n\n.specSkill p {\n  font-size: 2em;\n}\n.specSkill .skillDetails {\n  font-size: 1.5em;\n  width: 80%;\n  text-align: left;\n  padding-left: 10px;\n}\n\n.specSkill .skillDetails {\n  font-size: 1em;\n  font-weight: normal;\n}\n/*--------/HomeSkills---------*/\n\n\n\n/*--------HomeContact---------*/\n.contactSection {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 15px 0 25px 0;\n  /*border-bottom: 1px solid #efefef;*/\n}\n\n.getit {\n  font-size: 2.5em;\n  font-weight: 300;\n}\n\n.contactSection button {\n  font-size: 1.5em;\n  font-weight: 300;\n  background-color: #c4425a;\n  color: white;\n  border: 1px solid #c4425a;\n  padding: 10px;\n  transition-duration: .3s;\n  border-radius: 3px;\n  box-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n\n.contactSection button:hover {\n  /*background-color: white;\n  color: #c4425a;*/\n  transform: translateY(-3px);\n  box-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);\n}\n\n.contactSection button:focus {\n  outline: none;\n}\n\n.socialIcons {\n  margin-top: 30px;\n  width: 15%;\n  display: flex;\n  justify-content: space-around;\n  /*background-color: blue;*/\n}\n.socialIcons {\n  margin-top: 40px;\n  width: 15%;\n  display: flex;\n  justify-content: space-around;\n  /*background-color: blue;*/\n}\n.socialIcons a {\n  color: #393939;\n}\n\n.socialIcons i {\n  font-size: 2.5em;\n  transition-duration: .3s;\n}\n\n.socialIcons i:hover {\n  transform: translateY(-3px);\n}\n/*--------/HomeContact---------*/\n\n\n\n/*-----------ContactPage---------*/\n\n.contactPage {\n  display: flex;\n  flex-direction: column;\n  /*justify-content: center;*/\n  align-items: center;\n}\n\n.contactPage form {\n  display: flex;\n  flex-direction: column;\n  width: 500px;\n  height: 800px;\n  justify-content: space-around;\n}\n\n/*.contactPage form input {\n  width: 400px;\n}*/\n/*-----------ContactPage---------*/\n\n\n\n/*--------Footer---------*/\nfooter {\n  display: flex;\n  justify-content: center;\n}\n\n.footer {\n  border-top: 1px solid #efefef;\n  width: 960px;\n  height: 50px;\n  display: flex;\n  align-items: center;\n}\n\n.footer small {\n  color: #CFD7DF;\n}\n\n.addLink {\n  display: flex;\n  align-items: center;\n}\n\n.addLink a {\n  text-decoration: none;\n  color: #CFD7DF;\n  transition-duration: .3s;\n}\n\n.addLink a:hover {\n  color: #9ba2a8;\n}\n/*--------/Footer---------*/\n", ""]);
 	
 	// exports
 
@@ -26989,7 +26993,7 @@
 	  displayName: 'Navbar',
 	
 	  render: function render() {
-	    var links = ["projects", "about me", "contact"];
+	    var links = ["projects", "about", "contact"];
 	    links = links.map(function (element, idx) {
 	      return _react2.default.createElement(
 	        'li',
@@ -27037,8 +27041,7 @@
 	exports.default = Navbar;
 
 /***/ },
-/* 240 */,
-/* 241 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27051,9 +27054,327 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _jquery = __webpack_require__(242);
+	var _HeroArea = __webpack_require__(241);
 	
-	var _IndividualProject = __webpack_require__(243);
+	var _HeroArea2 = _interopRequireDefault(_HeroArea);
+	
+	var _SkillsHome = __webpack_require__(242);
+	
+	var _SkillsHome2 = _interopRequireDefault(_SkillsHome);
+	
+	var _HomeContact = __webpack_require__(243);
+	
+	var _HomeContact2 = _interopRequireDefault(_HomeContact);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var HomeBody = _react2.default.createClass({
+	  displayName: 'HomeBody',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(_HeroArea2.default, null),
+	      _react2.default.createElement(_SkillsHome2.default, null),
+	      _react2.default.createElement(_HomeContact2.default, null)
+	    );
+	  }
+	});
+	
+	// components
+	exports.default = HomeBody;
+
+/***/ },
+/* 241 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var HeroArea = _react2.default.createClass({
+	  displayName: "HeroArea",
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "section",
+	      { className: "heroArea" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "heroAbout" },
+	        _react2.default.createElement(
+	          "p",
+	          { className: "heroSal" },
+	          "Hi, I'm Carlos"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          { className: "heroHeader" },
+	          "Fullstack Web Developer"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          { className: "heroHeader" },
+	          "Based in Brooklyn"
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = HeroArea;
+
+/***/ },
+/* 242 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var HomeSkills = _react2.default.createClass({
+	  displayName: "HomeSkills",
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { id: "bodyContent" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "bodyContainer" },
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Skills"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "skills" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "specSkill" },
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "HTML"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "skillSet" },
+	              _react2.default.createElement("i", { className: "devicon-html5-plain colored" }),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "skillDetails" },
+	                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam porro aperiam. "
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "specSkill" },
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "CSS"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "skillSet" },
+	              _react2.default.createElement("i", { className: "devicon-css3-plain colored" }),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "skillDetails" },
+	                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur deserunt adipisci totam earum."
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "specSkill" },
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "SASS"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "skillSet" },
+	              _react2.default.createElement("i", { className: "devicon-sass-original colored" }),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "skillDetails" },
+	                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ea, voluptatum eos ut? Corporis similique."
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "specSkill" },
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Javascript"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "skillSet" },
+	              _react2.default.createElement("i", { className: "devicon-javascript-plain colored" }),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "skillDetails" },
+	                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ea, voluptatum eos ut? Corporis similique."
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "specSkill" },
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "jQuery"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "skillSet" },
+	              _react2.default.createElement("i", { className: "devicon-jquery-plain colored" }),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "skillDetails" },
+	                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur deserunt adipisci totam earum."
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "specSkill" },
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "React"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "skillSet" },
+	              _react2.default.createElement("i", { className: "devicon-react-original colored" }),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "skillDetails" },
+	                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam porro aperiam. "
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = HomeSkills;
+
+/***/ },
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(179);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var HomeContact = _react2.default.createClass({
+	  displayName: 'HomeContact',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'section',
+	      { className: 'contactSection' },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: 'getit' },
+	        'Get in touch'
+	      ),
+	      _react2.default.createElement(
+	        _reactRouter.Link,
+	        { to: 'contact' },
+	        _react2.default.createElement(
+	          'button',
+	          null,
+	          'Contact me'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'socialIcons' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://www.instagram.com/steadyonthego/', target: '_blank' },
+	          _react2.default.createElement('i', { className: 'fa fa-instagram' })
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://github.com/Ceejaymar', target: '_blank' },
+	          _react2.default.createElement('i', { className: 'fa fa-github' })
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://www.linkedin.com/in/carmart', target: '_blank' },
+	          _react2.default.createElement('i', { className: 'fa fa-linkedin' })
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://twitter.com/steadyonthego', target: '_blank' },
+	          _react2.default.createElement('i', { className: 'fa fa-twitter' })
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = HomeContact;
+
+/***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _jquery = __webpack_require__(245);
+	
+	var _IndividualProject = __webpack_require__(246);
 	
 	var _IndividualProject2 = _interopRequireDefault(_IndividualProject);
 	
@@ -27086,7 +27407,6 @@
 	    return _react2.default.createElement(
 	      'div',
 	      null,
-	      console.log(this.state.projectsList),
 	      this.state.projectsList.map(function (element, idx) {
 	        return _react2.default.createElement(_IndividualProject2.default, { projectsList: element, key: idx });
 	      })
@@ -27098,7 +27418,7 @@
 	exports.default = Projects;
 
 /***/ },
-/* 242 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -37324,7 +37644,7 @@
 
 
 /***/ },
-/* 243 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37348,7 +37668,6 @@
 	    return _react2.default.createElement(
 	      'div',
 	      null,
-	      console.log(this.props.projectsList.image),
 	      _react2.default.createElement(
 	        'h1',
 	        null,
@@ -37372,7 +37691,101 @@
 	exports.default = IndividualProject;
 
 /***/ },
-/* 244 */
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _SkillList = __webpack_require__(248);
+	
+	var _SkillList2 = _interopRequireDefault(_SkillList);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var About = _react2.default.createClass({
+	  displayName: 'About',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(_SkillList2.default, null)
+	    );
+	  }
+	});
+	
+	// components
+	exports.default = About;
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _jquery = __webpack_require__(245);
+	
+	var _IndividualSkill = __webpack_require__(249);
+	
+	var _IndividualSkill2 = _interopRequireDefault(_IndividualSkill);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var SkillList = _react2.default.createClass({
+	  displayName: 'SkillList',
+	
+	  getInitialState: function getInitialState() {
+	    return {
+	      list: []
+	    };
+	  },
+	  componentDidMount: function componentDidMount() {
+	    this.handleRetrieveSkills();
+	  },
+	  handleRetrieveSkills: function handleRetrieveSkills() {
+	    var that = this;
+	    (0, _jquery.ajax)({
+	      url: '/api/skills',
+	      type: 'GET'
+	    }).then(function (response) {
+	      // console.log(response)
+	      that.setState({
+	        list: response
+	      });
+	    });
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      this.state.list.map(function (element, idx) {
+	        return _react2.default.createElement(_IndividualSkill2.default, { list: element, key: idx });
+	      })
+	    );
+	  }
+	});
+	
+	// components
+	exports.default = SkillList;
+
+/***/ },
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37387,22 +37800,78 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var About = _react2.default.createClass({
-	  displayName: 'About',
+	var IndividualSkill = _react2.default.createClass({
+	  displayName: 'IndividualSkill',
 	
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
 	      null,
-	      'Thsi is the about page.'
+	      _react2.default.createElement('i', { className: this.props.list.icon })
 	    );
 	  }
 	});
 	
-	exports.default = About;
+	exports.default = IndividualSkill;
 
 /***/ },
-/* 245 */
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _jquery = __webpack_require__(245);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+	
+	var CreateSkill = _react2.default.createClass({
+	  displayName: 'CreateSkill',
+	
+	  getInitialState: function getInitialState() {
+	    return {
+	      skill: "",
+	      icon: ""
+	    };
+	  },
+	  handleChange: function handleChange(change, e) {
+	    this.setState(_defineProperty({}, change, e.target.value));
+	  },
+	  submit: function submit(e) {
+	    (0, _jquery.ajax)({
+	      url: '/api/skills',
+	      type: 'POST',
+	      data: this.state
+	    });
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'form',
+	        { onSubmit: this.submit },
+	        _react2.default.createElement('input', { type: 'text', placeholder: 'title', value: this.state.skill, onChange: this.handleChange.bind(this, "skill") }),
+	        _react2.default.createElement('input', { type: 'text', placeholder: 'icon info', value: this.state.icon, onChange: this.handleChange.bind(this, "icon") }),
+	        _react2.default.createElement('input', { type: 'submit' })
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = CreateSkill;
+
+/***/ },
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -37415,7 +37884,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _jquery = __webpack_require__(242);
+	var _jquery = __webpack_require__(245);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -37465,7 +37934,53 @@
 	exports.default = CreateProject;
 
 /***/ },
-/* 246 */
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Contact = _react2.default.createClass({
+	  displayName: "Contact",
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "contactPage" },
+	      _react2.default.createElement(
+	        "h1",
+	        null,
+	        "Contact me"
+	      ),
+	      _react2.default.createElement(
+	        "form",
+	        null,
+	        _react2.default.createElement("label", null),
+	        _react2.default.createElement("input", { type: "text", placeholder: "name" }),
+	        _react2.default.createElement("label", null),
+	        _react2.default.createElement("input", { type: "text", placeholder: "email" }),
+	        _react2.default.createElement("label", null),
+	        _react2.default.createElement("input", { type: "text", placeholder: "message" }),
+	        _react2.default.createElement("label", null),
+	        _react2.default.createElement("input", { type: "submit" })
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = Contact;
+
+/***/ },
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37495,12 +38010,17 @@
 	        _react2.default.createElement(
 	          'small',
 	          null,
-	          '&copy Carlos Martinez'
+	          '\xA9 Carlos Martinez'
 	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'addLink' },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/createskill' },
+	          'Add skill'
+	        ),
 	        _react2.default.createElement(
 	          _reactRouter.Link,
 	          { to: '/createproject' },
@@ -37512,205 +38032,6 @@
 	});
 	
 	exports.default = Footer;
-
-/***/ },
-/* 247 */,
-/* 248 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _HeroArea = __webpack_require__(249);
-	
-	var _HeroArea2 = _interopRequireDefault(_HeroArea);
-	
-	var _HomeContact = __webpack_require__(250);
-	
-	var _HomeContact2 = _interopRequireDefault(_HomeContact);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	// components
-	var HomeBody = _react2.default.createClass({
-	  displayName: 'HomeBody',
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(_HeroArea2.default, null),
-	      _react2.default.createElement(_HomeContact2.default, null)
-	    );
-	  }
-	});
-	
-	exports.default = HomeBody;
-
-/***/ },
-/* 249 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var HeroArea = _react2.default.createClass({
-	  displayName: "HeroArea",
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      "section",
-	      { className: "heroArea" },
-	      _react2.default.createElement(
-	        "div",
-	        { className: "heroAbout" },
-	        _react2.default.createElement(
-	          "p",
-	          { className: "heroSal" },
-	          "Hi, I'm Carlos"
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          { className: "heroHeader" },
-	          "Fullstack Web Developer"
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          { className: "heroHeader" },
-	          "Based in Brooklyn"
-	        )
-	      )
-	    );
-	  }
-	});
-	
-	exports.default = HeroArea;
-
-/***/ },
-/* 250 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouter = __webpack_require__(179);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var HomeContact = _react2.default.createClass({
-	  displayName: 'HomeContact',
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'section',
-	      { className: 'contactSection' },
-	      _react2.default.createElement(
-	        'h1',
-	        { className: 'getit' },
-	        'Get in touch'
-	      ),
-	      _react2.default.createElement(
-	        _reactRouter.Link,
-	        { to: 'contact' },
-	        _react2.default.createElement(
-	          'button',
-	          null,
-	          'Contact me'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'socialIcons' },
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'https://www.instagram.com/steadyonthego/', target: '_blank' },
-	          _react2.default.createElement('i', { className: 'fa fa-instagram' })
-	        ),
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'https://github.com/Ceejaymar', target: '_blank' },
-	          _react2.default.createElement('i', { className: 'fa fa-github' })
-	        ),
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'https://www.linkedin.com/in/carmart', target: '_blank' },
-	          _react2.default.createElement('i', { className: 'fa fa-linkedin' })
-	        ),
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'https://twitter.com/steadyonthego', target: '_blank' },
-	          _react2.default.createElement('i', { className: 'fa fa-twitter' })
-	        )
-	      )
-	    );
-	  }
-	});
-	
-	exports.default = HomeContact;
-
-/***/ },
-/* 251 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Contact = _react2.default.createClass({
-	  displayName: "Contact",
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      "div",
-	      null,
-	      _react2.default.createElement(
-	        "form",
-	        null,
-	        _react2.default.createElement("label", null),
-	        _react2.default.createElement("input", { type: "text", placeholder: "name" }),
-	        _react2.default.createElement("label", null),
-	        _react2.default.createElement("input", { type: "text", placeholder: "email" }),
-	        _react2.default.createElement("label", null),
-	        _react2.default.createElement("input", { type: "text", placeholder: "message" }),
-	        _react2.default.createElement("label", null),
-	        _react2.default.createElement("input", { type: "submit" })
-	      )
-	    );
-	  }
-	});
-	
-	exports.default = Contact;
 
 /***/ }
 /******/ ]);

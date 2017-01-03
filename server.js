@@ -37,6 +37,29 @@ app.post('/api/projects', (req, res) => {
 	})
 })
 
+app.get('/api/skills', (req, res)=> {
+	db.Skill.findAll()
+	.then((data)=> {
+		res.send(data);
+	})
+	.catch((error)=> {
+		res.send(error);
+	})
+})
+
+app.post('/api/skills', (req, res) => {
+	db.Skill.create({
+		skill: req.body.skill,
+		icon: req.body.icon,
+	})
+	.then((data) => {
+		res.send(data);
+	})
+	.catch((error) => {
+		res.send(error)
+	})
+})
+
 app.get('/*',(req, res)=>{
   res.sendFile(path.join(__dirname, '/frontend/index.html'))
 })

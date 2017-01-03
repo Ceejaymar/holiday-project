@@ -3,7 +3,8 @@ import React from 'react';
 const Contact = React.createClass({
   render: function(){
     return (
-      <div>
+      <div className="contactPage">
+        <h1>Contact me</h1>
         <form>
           <label></label>
           <input type="text" placeholder="name" ></input>

@@ -3,7 +3,7 @@ import {Link} from 'react-router';
 
 const Navbar = React.createClass({
   render: function(){
-    var links = ["projects", "about me", "contact"];
+    var links = ["projects", "about", "contact"];
     links = links.map(function(element, idx){
       return (
         <li key={idx}><Link to={"/" + element} key={idx}>{element}</Link></li>

@@ -2,27 +2,27 @@ import React from 'react';
 import {ajax} from "jquery";
 
 // components
-import IndividualProject from './IndividualProject';
+import IndividualSkill from './IndividualSkill';
 
-const Projects = React.createClass({
+const SkillList = React.createClass({
   getInitialState: function (){
     return {
-      projectsList: []
+      list: []
     }
   },
   componentDidMount: function(){
-    this.handleRetrieveProjects();
+    this.handleRetrieveSkills();
   },
-  handleRetrieveProjects: function(){
+  handleRetrieveSkills: function(){
     var that = this;
     ajax({
-      url: '/api/projects',
+      url: '/api/skills',
       type: 'GET'
     })
     .then(function(response){
       // console.log(response)
       that.setState({
-        projectsList: response
+        list: response
       })
     })
   },
@@ -30,8 +30,8 @@ const Projects = React.createClass({
     return (
       <div>
         {
-          this.state.projectsList.map((element, idx)=> {
-            return <IndividualProject projectsList={element} key={idx} />
+          this.state.list.map((element, idx)=> {
+            return <IndividualSkill list={element} key={idx} />
           })
         }
       </div>
@@ -39,4 +39,4 @@ const Projects = React.createClass({
   }
 })
 
-export default Projects;
+export default SkillList;

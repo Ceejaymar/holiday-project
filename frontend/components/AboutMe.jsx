@@ -1,10 +1,13 @@
 import React from 'react';
 
+// components
+import SkillList from './skills/SkillList';
+
 const About = React.createClass({
   render: function(){
     return (
       <div>
-        Thsi is the about page.
+        <SkillList />
       </div>
     )
   }
