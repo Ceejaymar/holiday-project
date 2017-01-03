@@ -26658,7 +26658,7 @@
 	
 	
 	// module
-	exports.push([module.id, "html, body {\n  margin: 0;\n  padding: 0;\n  font-family: 'Source Sans Pro', sans-serif;\n  color: #393939;\n}\n\n/*----------Navbar---------*/\nnav {\n  height: 70px;\n  background-color: #c4425a;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n}\n\n.brand a {\n  text-decoration: none;\n}\n\n.brand a p {\n  color: white;\n  font-size: 2em;\n  font-weight: 300;\n  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n\n.navLinks {\n  width: 25%;\n}\n\nul {\n  /*background-color: white;*/\n  display: flex;\n  justify-content: space-around;\n}\n\n.navLinks ul li {\n  list-style: none;\n}\n\n.navLinks ul li a {\n  text-decoration: none;\n  color: white;\n  transition-duration: .3s;\n}\n\n.navLinks ul li a:hover {\n  color: #ce7384;\n  transform: translateY(-2px);\n  /*text-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);*/\n}\n/*----------/Navbar---------*/\n\n\n\n/*------------Hero----------*/\n\n.heroArea {\n  height: 450px;\n  background-color: #c4425a;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.heroAbout p {\n  margin: 0 0 10px 0;\n  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n.heroSal, .heroHeader {\n  font-size: 3em;\n  font-weight: 300;\n  color: white;\n}\n\n/*------------/Hero----------*/\n\n\n\n/*--------HomeSkills---------*/\n#bodyContent {\n  display: flex;\n  justify-content: center;\n}\n.bodyContainer {\n  width: 960px;\n  text-align: center;\n  padding-bottom: 30px;\n  border-bottom: 1px solid #efefef;\n}\n.bodyContainer p{\n  font-size: 2.5em;\n  font-weight: 300;\n}\n\n.skills {\n  display: flex;\n  flex-wrap: wrap;\n  margin-top: 20px;\n}\n\n/*.skillSet {\n  display: flex;\n  align-items: center;\n}*/\n\n.specSkill {\n  width: 320px;\n  margin-bottom: 50px;\n}\n\n.specSkill i {\n  font-size: 4.5em;\n}\n\n.specSkill p {\n  font-size: 2em;\n}\n.specSkill .skillDetails {\n  font-size: 1.5em;\n  width: 80%;\n  text-align: left;\n  padding-left: 10px;\n}\n\n.specSkill .skillDetails {\n  font-size: 1em;\n  font-weight: normal;\n}\n\n.viewMore a {\n  text-decoration: none;\n  color: black;\n}\n\n.viewMore a p {\n  font-size: 1.5em;\n}\n/*--------/HomeSkills---------*/\n\n\n\n/*--------HomeContact---------*/\n.contactSection {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 15px 0 25px 0;\n  /*border-bottom: 1px solid #efefef;*/\n}\n\n.getit {\n  font-size: 2.5em;\n  font-weight: 300;\n}\n\n.contactSection button {\n  font-size: 1.5em;\n  font-weight: 300;\n  background-color: #c4425a;\n  color: white;\n  border: 1px solid #c4425a;\n  padding: 10px;\n  transition-duration: .3s;\n  border-radius: 3px;\n  box-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n\n.contactSection button:hover {\n  /*background-color: white;\n  color: #c4425a;*/\n  transform: translateY(-3px);\n  box-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);\n}\n\n.contactSection button:focus {\n  outline: none;\n}\n\n.socialIcons {\n  margin-top: 30px;\n  width: 15%;\n  display: flex;\n  justify-content: space-around;\n  /*background-color: blue;*/\n}\n\n/*.socialIcons {\n  margin-top: 40px;\n  width: 15%;\n  display: flex;\n  justify-content: space-around;\n  background-color: blue;\n}*/\n\n.socialIcons a {\n  color: #393939;\n}\n\n.socialIcons i {\n  font-size: 2.5em;\n  transition-duration: .3s;\n}\n\n.socialIcons i:hover {\n  transform: translateY(-3px);\n}\n/*--------/HomeContact---------*/\n\n\n\n/*--------ProjectPage---------*/\n.mainContainer {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n}\n\n.mainContainer h1 {\n  font-size: 2.5em;\n  font-weight: 300;\n}\n\n.projectContainer {\n  /*background-color: red;*/\n  width: 1080px;\n  padding: 0;\n  display: flex;\n  flex-wrap: wrap;\n}\n\n.singleProject{\n  width: 530px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0;\n  margin-bottom: 20px;\n}\n\n.singleProject .singleHeader {\n  font-size: 2em;\n}\n\n.singleProject img {\n  width: 500px;\n  padding: 0;\n}\n\n.singleProject a {\n  color: black;\n  text-decoration: none;\n}\n\n.singleProject p {\n  /*margin: 0;*/\n}\n\n.projectInfo {\n  display: flex;\n  align-items: center;\n  width: 500px;\n  justify-content: space-around;\n}\n/*--------ProjectPage---------*/\n\n\n\n/*-----------ContactPage---------*/\n\n.contactPage {\n  display: flex;\n  flex-direction: column;\n  /*justify-content: center;*/\n  align-items: center;\n}\n\n.contactPage form {\n  display: flex;\n  flex-direction: column;\n  width: 500px;\n  height: 800px;\n  justify-content: space-around;\n}\n\n/*.contactPage form input {\n  width: 400px;\n}*/\n/*-----------ContactPage---------*/\n\n\n\n/*--------Footer---------*/\nfooter {\n  display: flex;\n  justify-content: center;\n}\n\n.footer {\n  border-top: 1px solid #efefef;\n  width: 960px;\n  height: 50px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.footer small {\n  color: #CFD7DF;\n}\n\n.addLink {\n  width: 175px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.addLink a {\n  text-decoration: none;\n  color: #CFD7DF;\n  transition-duration: .3s;\n}\n\n.addLink a:hover {\n  color: #9ba2a8;\n}\n/*--------/Footer---------*/\n", ""]);
+	exports.push([module.id, "html, body {\n  margin: 0;\n  padding: 0;\n  font-family: 'Source Sans Pro', sans-serif;\n  color: #393939;\n}\n\n/*----------Navbar---------*/\nnav {\n  height: 70px;\n  background-color: #c4425a;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n}\n\n.brand a {\n  text-decoration: none;\n}\n\n.brand a p {\n  color: white;\n  font-size: 2em;\n  font-weight: 300;\n  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n\n.navLinks {\n  width: 25%;\n}\n\nul {\n  /*background-color: white;*/\n  display: flex;\n  justify-content: space-around;\n}\n\n.navLinks ul li {\n  list-style: none;\n}\n\n.navLinks ul li a {\n  text-decoration: none;\n  color: white;\n  transition-duration: .3s;\n}\n\n.navLinks ul li a:hover {\n  color: #ce7384;\n  transform: translateY(-2px);\n  /*text-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);*/\n}\n/*----------/Navbar---------*/\n\n\n\n/*------------Hero----------*/\n\n.heroArea {\n  height: 450px;\n  background-color: #c4425a;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.heroAbout p {\n  margin: 0 0 10px 0;\n  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n.heroSal, .heroHeader {\n  font-size: 3em;\n  font-weight: 300;\n  color: white;\n}\n\n/*------------/Hero----------*/\n\n\n\n/*--------HomeSkills---------*/\n#bodyContent {\n  display: flex;\n  justify-content: center;\n}\n.bodyContainer {\n  width: 960px;\n  text-align: center;\n  padding-bottom: 30px;\n  border-bottom: 1px solid #efefef;\n}\n.bodyContainer p{\n  font-size: 2.5em;\n  font-weight: 300;\n}\n\n.skills {\n  display: flex;\n  flex-wrap: wrap;\n  margin-top: 20px;\n}\n\n/*.skillSet {\n  display: flex;\n  align-items: center;\n}*/\n\n.specSkill {\n  width: 320px;\n  margin-bottom: 50px;\n}\n\n.specSkill i {\n  font-size: 4.5em;\n}\n\n.specSkill p {\n  font-size: 2em;\n}\n.specSkill .skillDetails {\n  font-size: 1.5em;\n  width: 80%;\n  text-align: left;\n  padding-left: 10px;\n}\n\n.specSkill .skillDetails {\n  font-size: 1em;\n  font-weight: normal;\n}\n\n.viewMore a {\n  text-decoration: none;\n  color: black;\n}\n\n.viewMore a p {\n  font-size: 1.5em;\n}\n/*--------/HomeSkills---------*/\n\n\n\n/*--------HomeContact---------*/\n.contactSection {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 15px 0 25px 0;\n  /*border-bottom: 1px solid #efefef;*/\n}\n\n.getit {\n  font-size: 2.5em;\n  font-weight: 300;\n}\n\n.contactSection button {\n  font-size: 1.5em;\n  font-weight: 300;\n  background-color: #c4425a;\n  color: white;\n  border: 1px solid #c4425a;\n  padding: 10px;\n  transition-duration: .3s;\n  border-radius: 3px;\n  box-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n\n.contactSection button:hover {\n  /*background-color: white;\n  color: #c4425a;*/\n  transform: translateY(-3px);\n  box-shadow: 2px 2px 3px rgba(57, 57, 57, 0.4);\n}\n\n.contactSection button:focus {\n  outline: none;\n}\n\n.socialIcons {\n  margin-top: 30px;\n  width: 15%;\n  display: flex;\n  justify-content: space-around;\n  /*background-color: blue;*/\n}\n\n/*.socialIcons {\n  margin-top: 40px;\n  width: 15%;\n  display: flex;\n  justify-content: space-around;\n  background-color: blue;\n}*/\n\n.socialIcons a {\n  color: #393939;\n}\n\n.socialIcons i {\n  font-size: 2.5em;\n  transition-duration: .3s;\n}\n\n.socialIcons i:hover {\n  transform: translateY(-3px);\n}\n/*--------/HomeContact---------*/\n\n\n\n/*--------ProjectPage---------*/\n.mainContainer {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n}\n\n.mainContainer h1 {\n  font-size: 2.5em;\n  font-weight: 300;\n}\n\n.projectContainer {\n  /*background-color: red;*/\n  width: 1080px;\n  padding: 0;\n  display: flex;\n  flex-wrap: wrap;\n}\n\n.singleProject{\n  width: 530px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0;\n  margin-bottom: 20px;\n}\n\n.singleProject .singleHeader {\n  font-size: 2em;\n}\n\n.singleProject img {\n  width: 500px;\n  padding: 0;\n}\n\n.singleProject a {\n  color: black;\n  text-decoration: none;\n}\n\n.singleProject p {\n  /*margin: 0;*/\n}\n\n.projectInfo {\n  display: flex;\n  align-items: center;\n  width: 500px;\n  justify-content: space-around;\n}\n/*--------ProjectPage---------*/\n\n\n\n/*--------SkillsPage---------*/\n  .mainSkillCont {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n  }\n\n  .mainSkillCont h1 {\n    font-size: 2.5em;\n    font-weight: 300;\n  }\n\n.skillList {\n  width: 960px;\n  display: flex;\n  flex-wrap: wrap;\n}\n\n.skillList div {\n  width: 320px;\n  display: flex;\n  justify-content: center;\n  margin-bottom: 30px;\n}\n\n.skillList div i{\n  font-size: 5em;\n}\n\n/*--------/SkillsPage---------*/\n\n\n\n/*--------AboutPage---------*/\n.aboutSection {\n  height: 450px;\n  background-color: #c4425a;\n  display: flex;\n  /*justify-content: space-around;*/\n}\n\n.imageDiv {\n  width: 50%;\n  display: flex;\n  justify-content: center;\n}\n\n.imageDiv img {\n  width: 350px;\n  height: 380px;\n  border-radius: 100%;\n}\n\n.bioDiv p {\n  font-size: 2em;\n  font-weight: 300;\n  color: white;\n  text-shadow: 1px 1px 1px rgba(57, 57, 57, 0.4);\n}\n\n/*--------/AboutPage---------*/\n\n\n\n/*-----------ContactPage---------*/\n\n.contactPage {\n  display: flex;\n  flex-direction: column;\n  /*justify-content: center;*/\n  align-items: center;\n}\n\n.contactPage form {\n  display: flex;\n  flex-direction: column;\n  width: 500px;\n  height: 800px;\n  justify-content: space-around;\n}\n\n/*.contactPage form input {\n  width: 400px;\n}*/\n/*-----------ContactPage---------*/\n\n\n\n/*--------Footer---------*/\nfooter {\n  display: flex;\n  justify-content: center;\n}\n\n.footer {\n  border-top: 1px solid #efefef;\n  width: 960px;\n  height: 50px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.footer small {\n  color: #CFD7DF;\n}\n\n.addLink {\n  width: 175px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.addLink a {\n  text-decoration: none;\n  color: #CFD7DF;\n  transition-duration: .3s;\n}\n\n.addLink a:hover {\n  color: #9ba2a8;\n}\n/*--------/Footer---------*/\n", ""]);
 	
 	// exports
 
@@ -37712,10 +37712,19 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      null,
-	      this.state.list.map(function (element, idx) {
-	        return _react2.default.createElement(_IndividualSkill2.default, { list: element, key: idx });
-	      })
+	      { className: 'mainSkillCont' },
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        'Skills/tools'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'skillList' },
+	        this.state.list.map(function (element, idx) {
+	          return _react2.default.createElement(_IndividualSkill2.default, { list: element, key: idx });
+	        })
+	      )
 	    );
 	  }
 	});
@@ -37986,12 +37995,17 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _aboutInfo = __webpack_require__(255);
+	
+	var _aboutInfo2 = _interopRequireDefault(_aboutInfo);
+	
 	var _SkillList = __webpack_require__(248);
 	
 	var _SkillList2 = _interopRequireDefault(_SkillList);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// components
 	var About = _react2.default.createClass({
 	  displayName: 'About',
 	
@@ -37999,13 +38013,56 @@
 	    return _react2.default.createElement(
 	      'div',
 	      null,
+	      _react2.default.createElement(_aboutInfo2.default, null),
 	      _react2.default.createElement(_SkillList2.default, null)
 	    );
 	  }
 	});
 	
-	// components
 	exports.default = About;
+
+/***/ },
+/* 255 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var AboutInfo = _react2.default.createClass({
+	  displayName: "AboutInfo",
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "aboutSection" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "imageDiv" },
+	        _react2.default.createElement("img", { src: "https://lh3.googleusercontent.com/S6_BVepXymas6OKxqNZVZ0fAvB-nSrXLmkBY5jiwnCYpkKxYMh9mJcAPJR6C0QxfZCcto8cAHpoCZNk=w3360-h1854-rw" })
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "bioDiv" },
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "My name is carlos martinez. I am a full stack web developer based in brooklyn."
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = AboutInfo;
 
 /***/ }
 /******/ ]);

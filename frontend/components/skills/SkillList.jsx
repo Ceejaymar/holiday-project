@@ -28,12 +28,15 @@ const SkillList = React.createClass({
   },
   render: function(){
     return (
-      <div>
-        {
-          this.state.list.map((element, idx)=> {
-            return <IndividualSkill list={element} key={idx} />
-          })
-        }
+      <div className="mainSkillCont">
+        <h1>Skills/tools</h1>
+        <div className="skillList">
+          {
+            this.state.list.map((element, idx)=> {
+              return <IndividualSkill list={element} key={idx} />
+            })
+          }
+        </div>
       </div>
     )
   }
