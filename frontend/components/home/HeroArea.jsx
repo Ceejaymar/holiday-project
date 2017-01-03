@@ -6,9 +6,9 @@ const HeroArea = React.createClass({
       <section className="heroArea">
         <div className="heroAbout">
           <p className="heroSal">Hi, I'm Carlos</p>
-          <p className="heroHeader">Fullstack Web Developer</p>
+          <p className="heroHeader">fullstack web developer</p>
           {/* <!-- UI enthusiast --> */}
-          <p className="heroHeader">Based in Brooklyn</p>
+          <p className="heroHeader">based in Brooklyn</p>
 
         </div>
       </section>

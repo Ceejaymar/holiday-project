@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 // import HeroArea from "./components/HeroArea";
 import HomeBody from "./components/home/HomeBody";
 import Projects from "./components/projects/Projects";
-import About from "./components/AboutMe";
+import About from "./components/about/AboutMe";
 import CreateSkill from './components/skills/CreateSkill';
 import CreateProject from './components/projects/CreateProject';
 import Contact from './components/Contact';

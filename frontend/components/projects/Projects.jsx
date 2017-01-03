@@ -28,12 +28,15 @@ const Projects = React.createClass({
   },
   render: function(){
     return (
-      <div>
-        {
-          this.state.projectsList.map((element, idx)=> {
-            return <IndividualProject projectsList={element} key={idx} />
-          })
-        }
+      <div className="mainContainer">
+        <h1>Projects</h1>
+        <div className="projectContainer">
+          {
+            this.state.projectsList.map((element, idx)=> {
+              return <IndividualProject projectsList={element} key={idx} />
+            })
+          }
+        </div>
       </div>
     )
   }

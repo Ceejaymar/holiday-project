@@ -97,20 +97,21 @@ ul {
 .skills {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-.skillSet {
+/*.skillSet {
   display: flex;
   align-items: center;
-}
+}*/
 
 .specSkill {
   width: 320px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .specSkill i {
-  font-size: 2.5em;
+  font-size: 4.5em;
 }
 
 .specSkill p {
@@ -126,6 +127,15 @@ ul {
 .specSkill .skillDetails {
   font-size: 1em;
   font-weight: normal;
+}
+
+.viewMore a {
+  text-decoration: none;
+  color: black;
+}
+
+.viewMore a p {
+  font-size: 1.5em;
 }
 /*--------/HomeSkills---------*/
 
@@ -175,13 +185,15 @@ ul {
   justify-content: space-around;
   /*background-color: blue;*/
 }
-.socialIcons {
+
+/*.socialIcons {
   margin-top: 40px;
   width: 15%;
   display: flex;
   justify-content: space-around;
-  /*background-color: blue;*/
-}
+  background-color: blue;
+}*/
+
 .socialIcons a {
   color: #393939;
 }
@@ -195,6 +207,63 @@ ul {
   transform: translateY(-3px);
 }
 /*--------/HomeContact---------*/
+
+
+
+/*--------ProjectPage---------*/
+.mainContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainContainer h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.projectContainer {
+  /*background-color: red;*/
+  width: 1080px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.singleProject{
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.singleProject .singleHeader {
+  font-size: 2em;
+}
+
+.singleProject img {
+  width: 500px;
+  padding: 0;
+}
+
+.singleProject a {
+  color: black;
+  text-decoration: none;
+}
+
+.singleProject p {
+  /*margin: 0;*/
+}
+
+.projectInfo {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  justify-content: space-around;
+}
+/*--------ProjectPage---------*/
 
 
 
@@ -234,6 +303,7 @@ footer {
   height: 50px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .footer small {
@@ -241,8 +311,10 @@ footer {
 }
 
 .addLink {
+  width: 175px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .addLink a {

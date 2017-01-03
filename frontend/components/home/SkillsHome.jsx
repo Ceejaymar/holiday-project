@@ -1,55 +1,47 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 const HomeSkills = React.createClass({
   render: function() {
     return (
       <div id="bodyContent">
         <div className="bodyContainer">
-          <p>Skills</p>
+          <p>My skills</p>
           <div className="skills">
             <div className="specSkill">
-              <p>HTML</p>
               <div className="skillSet">
-                <i className="devicon-html5-plain colored"></i>
-                <p className="skillDetails">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam porro aperiam. </p>
+                <i className="devicon-html5-plain-wordmark colored"></i>
               </div>
             </div>
             <div className="specSkill">
-              <p>CSS</p>
               <div className="skillSet">
-                <i className="devicon-css3-plain colored"></i>
-                <p className="skillDetails">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur deserunt adipisci totam earum.</p>
+                <i className="devicon-css3-plain-wordmark colored"></i>
               </div>
             </div>
             <div className="specSkill">
-              <p>SASS</p>
               <div className="skillSet">
                 <i className="devicon-sass-original colored"></i>
-                <p className="skillDetails">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ea, voluptatum eos ut? Corporis similique.</p>
               </div>
             </div>
             <div className="specSkill">
-              <p>Javascript</p>
               <div className="skillSet">
                 <i className="devicon-javascript-plain colored"></i>
-                <p className="skillDetails">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ea, voluptatum eos ut? Corporis similique.</p>
               </div>
             </div>
             <div className="specSkill">
-              <p>jQuery</p>
               <div className="skillSet">
-                <i className="devicon-jquery-plain colored"></i>
-                <p className="skillDetails">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur deserunt adipisci totam earum.</p>
+                <i className="devicon-jquery-plain-wordmark colored"></i>
               </div>
             </div>
             <div className="specSkill">
-              <p>React</p>
               <div className="skillSet">
-                <i className="devicon-react-original colored"></i>
-                <p className="skillDetails">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam porro aperiam. </p>
+                <i className="devicon-react-original-wordmark colored"></i>
               </div>
             </div>
-          </div>  
+          </div>
+          <div className="viewMore">
+          <Link to="/about"><p>View more</p></Link>
+          </div>
         </div>
       </div>
     )
